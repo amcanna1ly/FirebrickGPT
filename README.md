@@ -79,3 +79,17 @@ To keep it running after SSH disconnect:
 nohup python app.py &
 ```
 Or, set up a `systemd` service for persistence.
+
+## Planned Features
+
+    User authentication for protected access to command mode
+
+    Chat history and session context memory
+
+    Voice input and output via WebRTC or browser APIs
+
+    Pi system dashboard for real-time stats via natural language
+
+    Custom instruction tuning with user-provided documents
+
+    Offline documentation agent (query Linux man pages or local manuals)
