@@ -1,4 +1,3 @@
-
 from flask import Flask, request, render_template_string
 from markupsafe import Markup
 import subprocess
@@ -74,11 +73,11 @@ HTML = """
   <button class="toggle-button" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
 
   <div style="display: flex; justify-content: center;">
-    <img src="/static/firebrickgpt_logo.png" alt="FirebrickGPT Logo" style="max-width: 300px; width: 100%%; height: auto; margin-bottom: 30px;">
+    <img src="/static/firebrickgpt_logo.png" alt="FirebrickGPT Logo" style="max-width: 200px; width: 100%%; height: auto; margin-bottom: 30px;">
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <form method="POST" style="width: 100%%; max-width: 1000px;">
+    <form method="POST" style="width: 100%%; max-width: 1000px; text-align: center;">
       <textarea name="prompt" rows="8" style="width: 100%%;" placeholder="Type your question here..."></textarea><br><br>
       Max tokens to generate: <span id="tokenValue">{{ token_value }}</span><br>
       <input type="range" name="tokens" id="tokens" min="16" max="256" value="{{ token_value }}" step="16" oninput="tokenValue.innerText = this.value" style="width: 100%%;"><br><br>
