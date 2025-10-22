@@ -12,6 +12,13 @@ FirebrickGPT is a local LLM interface for Raspberry Pi 5 using Flask and Mistral
 
 ---
 
+##Repository Layout
+static/
+    └── firebrickgpt_logo.png
+app.py
+README.md
+requirements.txt
+
 ## Step-by-Step Installation
 
 ### 🔧 1. Update and Install System Dependencies
